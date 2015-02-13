@@ -1,0 +1,17 @@
+.my-border(@width: 1px, @type: solid, @color: #bbb) {
+  border: @arguments;
+}
+
+.rounded-shape(@radius:@defaultRadius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.round {
+  .rounded-shape(9999px)
+}
+
+.rounded-square(@radius:@defaultRadius) {
+  .rounded-shape(@radius);
+}
