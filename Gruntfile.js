@@ -7,7 +7,7 @@ module.exports = function (grunt) {
       development: {
         options: {},
         files: {
-          "public/result.css": "client/source.less"
+          "public/result.css": "client/less/source.less"
         }
       }
     }
