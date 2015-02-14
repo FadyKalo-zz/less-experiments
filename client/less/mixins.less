@@ -8,10 +8,14 @@
   border-radius: @radius;
 }
 
-.round {
+.round() {
   .rounded-shape(9999px)
 }
 
 .rounded-square(@radius:@defaultRadius) {
   .rounded-shape(@radius);
+}
+
+.logo {
+  background: @defaultThemeColor @logo no-repeat center;
 }

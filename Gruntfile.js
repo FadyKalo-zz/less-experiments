@@ -5,9 +5,19 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     less: {
       development: {
-        options: {},
+        options: {
+          paths:["client/less"]
+        },
         files: {
-          "public/result.css": "client/less/source.less"
+          "public/result.css": "client/env/local.less"
+        }
+      },
+      production: {
+        options: {
+          paths:["client/less"]
+        },
+        files: {
+          "public/result.css": "client/env/production.less"
         }
       }
     }
